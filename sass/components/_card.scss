@@ -1,0 +1,118 @@
+.card {
+    // FUNCTIONALITY
+    position: relative;
+    height: 40rem;
+
+    &__side {
+        height: 40rem;
+        width: 100%;
+        border-radius: 3px;
+        overflow: hidden;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+
+        &--front {
+            background-color: #fff;
+        }
+    }
+
+    // FRONT SIDE STYLING
+    &__picture {
+        background-size: cover;
+        height: 23rem;
+        background-blend-mode: screen;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+
+        &--1 {
+            background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark), url(../img/services/accomplishment-agreement-business-1249158.jpg);
+        }
+
+        &--2 {
+            background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark), url(../img/services/affection-baby-baby-girl-377058.jpg);
+        }
+
+        &--3 {
+            background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark), url(../img/services/pexels-photo-1253591.jpeg);
+            
+        }
+        &--4 {
+            background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark), url(../img/services/pexels-photo-1282270.jpeg);
+        }
+
+        &--5 {
+            background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark), url(../img/services/download.jpg);
+            background-position: -4.2 0;
+        }
+
+        &--6 {
+            background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark), url(../img/services/6.jpeg);
+        }
+        &--7 {
+            background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark), url(../img/services/7.jpeg);
+        }
+
+        &--8 {
+            background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark), url(../img/services/pexels-photo-1556706.jpeg);
+        }
+
+        &--9 {
+            background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark), url(../img/services/1509042042152124-600x400.jpg);
+        }
+
+        &--10 {
+            background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark), url(../img/services/MW-GJ095_Visa_2_20180511153012_ZH.jpg);
+        }
+    }
+
+    &__heading {
+        font-size: 2.5rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        text-align: right;
+        color: #fff;
+        position: absolute;
+        top: 12rem;
+        right: 2rem;
+        width: 75%;
+    }
+
+    &__heading-span {
+        padding: 1rem 1.5rem;
+        -webkit-box-decoration-break: clone;
+        box-decoration-break: clone;
+        background-image: linear-gradient(to right bottom, rgba($color-tertiary-light, .85), rgba($color-tertiary-dark, .85));
+
+        // &--1 {
+        //     background-image: linear-gradient(to right bottom, rgba($color-tertiary-light, .85), rgba($color-tertiary-dark, .85));
+        // }
+
+        // &--2 {
+        //     background-image: linear-gradient(to right bottom, rgba($Light-Green, .85), rgba($Dark-Green, .85));
+        // }
+
+        // &--3 {
+        //     background-image: linear-gradient(to right bottom, rgba($color-tertiary-light, .85), rgba($color-tertiary-dark, .85));
+        // }
+    }
+
+    &__button{
+        text-align: center;
+        padding: 4rem 0;
+    }
+    
+    @include respond(tab-port) {
+        height: auto;
+        background-color: #fff;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+
+        &__side {
+            height: auto;
+            position: relative;
+            border-radius: 0px;
+            box-shadow: none;
+        }
+
+    }
+}
